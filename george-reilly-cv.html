@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Reilly - Founder & Technical Leader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0.5in;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.5;
+            color: #0a0a0a;
+            background: #0a0a0a;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(102, 126, 234, 0.08) 0%, transparent 50%),
+                linear-gradient(45deg, rgba(102, 126, 234, 0.03) 0%, rgba(118, 75, 162, 0.03) 100%);
+            min-height: 100vh;
+            padding: 1rem;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(102, 126, 234, 0.1) 0%, transparent 30%),
+                radial-gradient(circle at 90% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 30%);
+            pointer-events: none;
+            z-index: -1;
+            animation: backgroundShift 20s ease-in-out infinite;
+        }
+        
+        @keyframes backgroundShift {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        
+        .cv-container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 0;
+            box-shadow: 
+                0 0 0 1px rgba(102, 126, 234, 0.1),
+                0 25px 50px rgba(0, 0, 0, 0.15),
+                0 0 100px rgba(102, 126, 234, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .cv-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 25%, #667eea 50%, #764ba2 75%, #667eea 100%);
+            background-size: 300% 100%;
+            animation: gradientFlow 4s ease-in-out infinite;
+        }
+        
+        .cv-container::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #667eea, #764ba2, #667eea, #764ba2);
+            background-size: 400% 400%;
+            animation: borderGlow 6s ease-in-out infinite;
+            z-index: -1;
+            border-radius: 2px;
+        }
+        
+        @keyframes gradientFlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        @keyframes borderGlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .cv-content {
+            padding: 2.5rem;
+        }
+        
+        .header {
+            margin-bottom: 2.5rem;
+            position: relative;
+            padding-top: 0.5rem;
+        }
+        
+        .name {
+            font-size: 4.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            animation: textShimmer 3s ease-in-out infinite;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        
+        @keyframes textShimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        @keyframes underlineFlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .title {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-item i {
+            color: #0a0a0a;
+            font-size: 0.8rem;
+            width: 12px;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0a0a0a;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 1px solid #0a0a0a;
+            padding-bottom: 0.5rem;
+        }
+        
+        .company {
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #fafbfc 0%, #ffffff 100%);
+            border-radius: 16px;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+        
+        .company::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            border-radius: 0 4px 4px 0;
+            transition: width 0.3s ease;
+        }
+        
+        .company::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.02) 0%, rgba(118, 75, 162, 0.02) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .company:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.1),
+                0 0 60px rgba(102, 126, 234, 0.15);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+        
+        .company:hover::before {
+            width: 6px;
+        }
+        
+        .company:hover::after {
+            opacity: 1;
+        }
+        
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+        
+        .company-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #0a0a0a;
+        }
+        
+        .role {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: 400;
+        }
+        
+        .duration {
+            font-size: 0.8rem;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+        
+        .achievements {
+            margin-left: 0;
+        }
+        
+        .achievement {
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #333;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .tech-badge {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            color: #495057;
+            padding: 0.8rem 1.2rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        
+        .tech-badge::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .tech-badge::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .tech-badge:hover {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 
+                0 10px 30px rgba(102, 126, 234, 0.2),
+                0 0 40px rgba(102, 126, 234, 0.1);
+            border-color: rgba(102, 126, 234, 0.3);
+            color: #667eea;
+        }
+        
+        .tech-badge:hover::before {
+            left: 100%;
+        }
+        
+        .tech-badge:hover::after {
+            opacity: 1;
+        }
+        
+        .tech-badge i {
+            font-size: 1.3rem;
+            width: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+        
+        .tech-badge:hover i {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .tech-stack-compact {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+        
+        .tech-stack-compact .tech-badge {
+            justify-content: center;
+            text-align: center;
+            padding: 1rem 0.8rem;
+            font-size: 0.75rem;
+            min-height: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        
+        .tech-stack-compact .tech-badge i {
+            font-size: 1.5rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .highlight-box {
+            background: #0a0a0a;
+            color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .highlight-title {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        
+        .tech-categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .tech-category {
+            padding: 1rem;
+            border: 1px solid #e5e5e5;
+        }
+        
+        .tech-category h4 {
+            color: #0a0a0a;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .competencies {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .competency-item {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            color: #333;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border: 1px solid rgba(102, 126, 234, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .competency-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 70%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            border-radius: 0 4px 4px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .competency-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.03) 0%, rgba(118, 75, 162, 0.03) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .competency-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+            border-color: rgba(102, 126, 234, 0.2);
+        }
+        
+        .competency-item:hover::before {
+            width: 5px;
+            height: 75%;
+        }
+        
+        .competency-item:hover::after {
+            opacity: 1;
+        }
+        
+        .competency-item strong {
+            color: #0a0a0a;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .education-item {
+            padding: 1rem;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border: 1px solid rgba(102, 126, 234, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .education-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .education-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #0a0a0a;
+            margin-bottom: 0.3rem;
+        }
+        
+        .education-source {
+            font-size: 0.8rem;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-description {
+            font-size: 0.75rem;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        
+        .main-content {
+            grid-column: 2;
+        }
+        
+        .sidebar {
+            grid-column: 1;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+            }
+            
+            .cv-content {
+                padding: 2rem;
+            }
+            
+            .section {
+                break-inside: avoid;
+            }
+            
+            .company {
+                break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 0.5rem;
+            }
+            
+            .cv-content {
+                padding: 1.5rem;
+            }
+            
+            .name {
+                font-size: 2.5rem;
+            }
+            
+            .grid-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .tech-stack-compact {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .tech-categories {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="cv-content">
+            <div class="header">
+                <h1 class="name">George Reilly</h1>
+                <p class="title">Founder • Technical Leader</p>
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fas fa-envelope"></i> georgereilly5@gmail.com</div>
+                    <div class="contact-item"><i class="fas fa-briefcase"></i> Founder at ZAPT</div>
+                    <div class="contact-item"><i class="fas fa-rocket"></i> Building Kaizen</div>
+                </div>
+            </div>
+
+            <div class="grid-layout">
+                <div class="sidebar">
+                    <div class="section">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="competencies">
+                            <div class="competency-item">
+                                <strong>Problem Solving</strong><br>
+                                Finding solutions when others give up
+                            </div>
+                            <div class="competency-item">
+                                <strong>Business Automation</strong><br>
+                                Software solutions that eliminate manual processes
+                            </div>
+                            <div class="competency-item">
+                                <strong>IoT & Device Management</strong><br>
+                                Remote monitoring and control systems
+                            </div>
+                            <div class="competency-item">
+                                <strong>Financial Reporting</strong><br>
+                                Automated calculations and report generation
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="section-title">Education</h2>
+                        <div class="education-item">
+                            <div class="education-title">YouTube University</div>
+                            <div class="education-source">Self-Directed Learning</div>
+                            <div class="education-description">
+                                All the answers are out there if you can be bothered to look
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-title">Trying</div>
+                            <div class="education-source">Practical Experience</div>
+                            <div class="education-description">
+                                Sometimes it works, sometimes it doesn't
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="section-title">Technical Stack</h2>
+                        <div class="tech-stack-compact">
+                            <span class="tech-badge"><i class="devicon-react-original"></i> React</span>
+                            <span class="tech-badge"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                            <span class="tech-badge"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                            <span class="tech-badge"><i class="devicon-python-plain"></i> Python</span>
+                            <span class="tech-badge"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+                            <span class="tech-badge"><i class="devicon-supabase-plain"></i> Supabase</span>
+                            <span class="tech-badge"><i class="devicon-redis-plain"></i> Redis</span>
+                            <span class="tech-badge"><i class="fas fa-microchip"></i> IoT</span>
+                            <span class="tech-badge"><i class="devicon-vercel-plain"></i> Vercel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-content">
+                    <div class="section">
+                        <h2 class="section-title">Work Experience</h2>
+                        
+                        <div class="company">
+                            <div class="company-header">
+                                <span class="company-name">ZAPT</span>
+                                <span class="role">Founder & CEO</span>
+                            </div>
+                            <div class="duration">September 2024 - Present</div>
+                            <div class="achievements">
+                                <div class="achievement">Built complete powerbank rental business from scratch - branding, operations, and all technical systems</div>
+                                <div class="achievement">Created automated monitoring system that tracks device status and capacity in real time, eliminating manual checks</div>
+                                <div class="achievement">Developed software that automatically generates financial reports and calculates commissions, saving hours of manual work</div>
+                                <div class="achievement">Implemented automated replenishment system that alerts when powerbanks need to be restocked, reducing downtime</div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-badge"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                                <span class="tech-badge"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="tech-badge"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+                                <span class="tech-badge"><i class="fas fa-microchip"></i> IoT Systems</span>
+                            </div>
+                        </div>
+
+                        <div class="company">
+                            <div class="company-header">
+                                <span class="company-name">Kaizen</span>
+                                <span class="role">Solo Developer</span>
+                            </div>
+                            <div class="duration">April 2025 - Present</div>
+                            <div class="achievements">
+                                <div class="achievement">Building AI-powered productivity app that provides personalized coaching to help users build better habits</div>
+                                <div class="achievement">Created gamification system that motivates users through achievements and progress tracking</div>
+                                <div class="achievement">Developed smart analytics that identify patterns and provide actionable insights for productivity improvement</div>
+                                <div class="achievement">Built cross-platform mobile app that syncs data across devices for seamless user experience</div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-badge"><i class="devicon-react-original"></i> React</span>
+                                <span class="tech-badge"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                                <span class="tech-badge"><i class="devicon-supabase-plain"></i> Supabase</span>
+                                <span class="tech-badge"><i class="fas fa-mobile-alt"></i> Mobile Development</span>
+                            </div>
+                        </div>
+
+                        <div class="company">
+                            <div class="company-header">
+                                <span class="company-name">IceJewlz</span>
+                                <span class="role">Head of Marketing</span>
+                            </div>
+                            <div class="duration">Previous Role</div>
+                            <div class="achievements">
+                                <div class="achievement">Led comprehensive content strategy across all digital channels</div>
+                                <div class="achievement">Managed brand representation and social media presence</div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-badge"><i class="devicon-premierepro-plain"></i> Premiere Pro</span>
+                                <span class="tech-badge"><i class="devicon-aftereffects-plain"></i> After Effects</span>
+                                <span class="tech-badge"><i class="devicon-photoshop-plain"></i> Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
