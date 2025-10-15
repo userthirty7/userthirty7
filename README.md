@@ -1,22 +1,37 @@
 
 <div align="center">
 
-# 👋 Hi, I'm userthirty7
-
-### I like to solve problems for fun
+# Welcome
+![Gif](https://media1.tenor.com/m/1y47NUVHSc4AAAAd/batman-arkham.gif)
+### Building my way up these streets 1 prompt at a time
 
 ![Profile Views](https://komarev.com/ghpvc/?username=userthirty7&color=blueviolet&style=flat-square)
 
 </div>
 
----
 
-## 🎯 Currently Building
+
+## 🎯 Currently Building 
 
 <div align="center">
 
-### **Kaizen** - The App for Continuous Progression
+<img width="100" height="100" alt="kaizen-transparent" src="https://github.com/user-attachments/assets/aca8b0c7-bf57-4689-94e4-987c7c9c413d" />
+
+### **KAIZEN** - The App for Continuous Progression
 *All in one platform connecting your productivity with AI*
+
+<table style="border: none; border-collapse: collapse;">
+<tr>
+<td align="center" style="border: none;">
+  <img width="166" height="295" alt="TODAYSCREEN"
+       src="https://github.com/user-attachments/assets/fcbb33e4-3e32-486a-a842-06e23f593874" />
+</td>
+<td align="center" style="border: none;">
+  <img width="166" height="295" alt="HABITS"
+       src="https://github.com/user-attachments/assets/9a2c9bb2-325e-4020-9f70-501f9d777039" />
+</td>
+</tr>
+</table>
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=000)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=fff)
@@ -26,8 +41,8 @@
 </div>
 
 > 🧠 **AI-Powered** habit tracking with intelligent coaching to hold you accountable  
-> 🎮 **Gamified** XP system to earn achievements and level up
-> 📊 **Smart Analytics** that actually help you improve  
+> 🎮 **Gamified** XP system to earn achievements and level up                      
+> 🏃 **Advanced Tracking** features like GPS distance, calorie counter with image
 
 ---
 
@@ -95,17 +110,9 @@
 
 </div>
 
----
+
 
 <div align="center">
-
-## 📫 Let's Connect
-
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:WWW@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/yourhandle)
-
----
 
 *"Doing my part for Gotham"* 
 
