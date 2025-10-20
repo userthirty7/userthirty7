@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>George Reilly - Founder & Technical Leader</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
     <style>
@@ -20,50 +20,25 @@
         }
         
         body {
-            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.5;
-            color: #0a0a0a;
-            background: #0a0a0a;
-            background-image: 
-                radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(102, 126, 234, 0.08) 0%, transparent 50%),
-                linear-gradient(45deg, rgba(102, 126, 234, 0.03) 0%, rgba(118, 75, 162, 0.03) 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: #373737;
             min-height: 100vh;
-            padding: 1rem;
+            padding: 2rem;
             position: relative;
-            overflow-x: hidden;
         }
         
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 10% 20%, rgba(102, 126, 234, 0.1) 0%, transparent 30%),
-                radial-gradient(circle at 90% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 30%);
-            pointer-events: none;
-            z-index: -1;
-            animation: backgroundShift 20s ease-in-out infinite;
-        }
-        
-        @keyframes backgroundShift {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.8; transform: scale(1.05); }
-        }
         
         .cv-container {
             max-width: 8.5in;
             margin: 0 auto;
-            background: #ffffff;
-            border-radius: 0;
+            background: #2a2a2a;
+            border-radius: 12px;
             box-shadow: 
-                0 0 0 1px rgba(102, 126, 234, 0.1),
-                0 25px 50px rgba(0, 0, 0, 0.15),
-                0 0 100px rgba(102, 126, 234, 0.1);
+                0 4px 6px -1px rgba(0, 0, 0, 0.3),
+                0 2px 4px -1px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
             overflow: hidden;
             position: relative;
         }
@@ -74,128 +49,214 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 6px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 25%, #667eea 50%, #764ba2 75%, #667eea 100%);
-            background-size: 300% 100%;
-            animation: gradientFlow 4s ease-in-out infinite;
-        }
-        
-        .cv-container::after {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(45deg, #667eea, #764ba2, #667eea, #764ba2);
-            background-size: 400% 400%;
-            animation: borderGlow 6s ease-in-out infinite;
-            z-index: -1;
-            border-radius: 2px;
-        }
-        
-        @keyframes gradientFlow {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-        
-        @keyframes borderGlow {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb 0%, #1d4ed8 50%, #2563eb 100%);
         }
         
         .cv-content {
-            padding: 2.5rem;
+            padding: 1.5rem;
         }
         
         .header {
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.5rem;
             position: relative;
             padding-top: 0.5rem;
         }
         
         .name {
-            font-size: 4.5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%);
-            background-size: 200% 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.03em;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.02em;
             line-height: 1.1;
-            animation: textShimmer 3s ease-in-out infinite;
             position: relative;
-            padding-bottom: 0.5rem;
         }
         
         
-        @keyframes textShimmer {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-        
-        @keyframes underlineFlow {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
         
         .title {
-            font-size: 1.1rem;
-            color: #666;
-            font-weight: 400;
-            margin-bottom: 1.5rem;
-            margin-top: 1rem;
+            font-size: 1rem;
+            color: #a0a0a0;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            margin-top: 0.3rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.05em;
         }
         
         .contact-info {
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
             flex-wrap: wrap;
+            margin-bottom: 1rem;
         }
         
         .contact-item {
-            color: #666;
+            color: #b0b0b0;
             font-size: 0.9rem;
-            font-weight: 400;
+            font-weight: 500;
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
         
         .contact-item i {
-            color: #0a0a0a;
+            color: #2563eb;
             font-size: 0.8rem;
             width: 12px;
         }
         
+        .tech-stack-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.8rem;
+            padding: 0.8rem 0;
+            border-top: 1px solid #555555;
+            width: 100%;
+        }
+        
+        .tech-badge-small {
+            background: #4a4a4a;
+            color: #d0d0d0;
+            padding: 0.6rem;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+            border: 1px solid #666666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            flex: 1;
+            max-width: 50px;
+            margin: 0 0.25rem;
+        }
+        
+        .tech-badge-small:hover {
+            background: #5a5a5a;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            border-color: #777777;
+            color: #ffffff;
+        }
+        
+        .tech-stack-header .tech-badge-small::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e293b;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        
+        .tech-stack-header .tech-badge-small::before {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 4px solid transparent;
+            border-bottom-color: #1e293b;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        
+        .tech-stack-header .tech-badge-small:hover::after,
+        .tech-stack-header .tech-badge-small:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .tech-stack-header .tech-badge-small i {
+            font-size: 1.2rem;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        
+        .tech-stack-header .tech-badge-small {
+            font-size: 1.2rem;
+            text-align: center;
+            transition: all 0.2s ease;
+            font-weight: 600;
+        }
+        
         .section {
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
         }
         
         .section-title {
             font-size: 1rem;
             font-weight: 600;
-            color: #0a0a0a;
-            margin-bottom: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 1rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            border-bottom: 1px solid #0a0a0a;
-            padding-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 0.3rem;
+            display: inline-block;
+        }
+        
+        .profile-content {
+            background: #3a3a3a;
+            padding: 1.2rem;
+            border-radius: 8px;
+            border: 1px solid #555555;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        
+        .profile-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #2563eb;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .profile-content p {
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #d0d0d0;
+            margin-left: 0.5rem;
+        }
+        
+        .profile-content p:last-child {
+            margin-bottom: 0;
         }
         
         .company {
-            margin-bottom: 2rem;
-            padding: 2rem;
-            background: linear-gradient(135deg, #fafbfc 0%, #ffffff 100%);
-            border-radius: 16px;
-            border: 1px solid rgba(102, 126, 234, 0.1);
+            margin-bottom: 1.2rem;
+            padding: 1.2rem;
+            background: #3a3a3a;
+            border-radius: 8px;
+            border: 1px solid #555555;
             position: relative;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            overflow: hidden;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
         
         .company::before {
@@ -205,38 +266,14 @@
             left: 0;
             width: 4px;
             height: 100%;
-            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            background: #2563eb;
             border-radius: 0 4px 4px 0;
-            transition: width 0.3s ease;
-        }
-        
-        .company::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.02) 0%, rgba(118, 75, 162, 0.02) 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none;
         }
         
         .company:hover {
-            transform: translateY(-4px) scale(1.01);
-            box-shadow: 
-                0 20px 40px rgba(0, 0, 0, 0.1),
-                0 0 60px rgba(102, 126, 234, 0.15);
-            border-color: rgba(102, 126, 234, 0.3);
-        }
-        
-        .company:hover::before {
-            width: 6px;
-        }
-        
-        .company:hover::after {
-            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            border-color: #777777;
         }
         
         .company-header {
@@ -249,19 +286,19 @@
         .company-name {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #0a0a0a;
+            color: #ffffff;
         }
         
         .role {
             font-size: 0.9rem;
-            color: #666;
-            font-weight: 400;
+            color: #a0a0a0;
+            font-weight: 500;
         }
         
         .duration {
             font-size: 0.8rem;
-            color: #999;
-            font-weight: 400;
+            color: #888888;
+            font-weight: 500;
             margin-bottom: 1rem;
         }
         
@@ -272,8 +309,8 @@
         .achievement {
             margin-bottom: 0.8rem;
             font-size: 0.9rem;
-            line-height: 1.4;
-            color: #333;
+            line-height: 1.5;
+            color: #d0d0d0;
         }
         
         .tech-stack {
@@ -284,75 +321,34 @@
         }
         
         .tech-badge {
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            color: #495057;
-            padding: 0.8rem 1.2rem;
-            border-radius: 12px;
+            background: #4a4a4a;
+            color: #d0d0d0;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
             font-size: 0.8rem;
-            font-weight: 600;
-            font-family: 'Space Grotesk', sans-serif;
-            border: 1px solid rgba(102, 126, 234, 0.1);
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+            border: 1px solid #666666;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            gap: 0.5rem;
+            transition: all 0.2s ease;
             position: relative;
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-        }
-        
-        .tech-badge::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.2), transparent);
-            transition: left 0.6s ease;
-        }
-        
-        .tech-badge::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
         }
         
         .tech-badge:hover {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 
-                0 10px 30px rgba(102, 126, 234, 0.2),
-                0 0 40px rgba(102, 126, 234, 0.1);
-            border-color: rgba(102, 126, 234, 0.3);
-            color: #667eea;
-        }
-        
-        .tech-badge:hover::before {
-            left: 100%;
-        }
-        
-        .tech-badge:hover::after {
-            opacity: 1;
+            background: #5a5a5a;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            border-color: #777777;
+            color: #ffffff;
         }
         
         .tech-badge i {
-            font-size: 1.3rem;
-            width: 20px;
+            font-size: 1.2rem;
+            width: 18px;
             text-align: center;
-            position: relative;
-            z-index: 2;
-            transition: all 0.3s ease;
-        }
-        
-        .tech-badge:hover i {
-            transform: scale(1.1) rotate(5deg);
+            transition: all 0.2s ease;
         }
         
         .tech-stack-compact {
@@ -527,19 +523,80 @@
             line-height: 1.4;
         }
         
-        .grid-layout {
+        .skills-horizontal {
             display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 3rem;
-            align-items: start;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1rem;
         }
         
-        .main-content {
-            grid-column: 2;
+        .skill-item {
+            text-align: center;
+            padding: 1rem 0.8rem;
+            background: #3a3a3a;
+            border-radius: 8px;
+            border: 1px solid #555555;
+            transition: all 0.2s ease;
+            position: relative;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
         
-        .sidebar {
-            grid-column: 1;
+        .skill-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #2563eb;
+            transform: scaleX(0);
+            transition: transform 0.2s ease;
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            border-color: #777777;
+        }
+        
+        .skill-item:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .skill-item strong {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.4rem;
+            line-height: 1.2;
+        }
+        
+        .skill-desc {
+            font-size: 0.75rem;
+            color: #b0b0b0;
+            line-height: 1.3;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .tech-stack-horizontal {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+        }
+        
+        .tech-stack-horizontal .tech-badge {
+            padding: 0.8rem 1.2rem;
+            font-size: 0.85rem;
+            border-radius: 20px;
         }
         
         @media print {
@@ -592,6 +649,22 @@
                 margin-bottom: 0.5rem;
             }
             
+            .tech-stack-header {
+                padding: 0.8rem 0;
+            }
+            
+            .tech-badge-small {
+                padding: 0.5rem;
+                width: 36px;
+                height: 36px;
+                max-width: 40px;
+                margin: 0 0.2rem;
+            }
+            
+            .tech-badge-small i {
+                font-size: 1rem;
+            }
+            
             .title {
                 font-size: 1rem;
                 margin-bottom: 1rem;
@@ -607,9 +680,32 @@
                 padding: 0.4rem 0.8rem;
             }
             
-            .grid-layout {
-                grid-template-columns: 1fr;
+            .skills-horizontal {
+                grid-template-columns: repeat(2, 1fr);
                 gap: 1.5rem;
+            }
+            
+            .skill-item {
+                padding: 1.5rem 1rem;
+                min-height: 120px;
+            }
+            
+            .skill-item strong {
+                font-size: 1rem;
+                margin-bottom: 0.6rem;
+            }
+            
+            .skill-desc {
+                font-size: 0.85rem;
+            }
+            
+            .tech-stack-horizontal {
+                gap: 0.6rem;
+            }
+            
+            .tech-stack-horizontal .tech-badge {
+                padding: 0.6rem 1rem;
+                font-size: 0.8rem;
             }
             
             .section-title {
@@ -703,6 +799,22 @@
                 font-size: 1.8rem;
             }
             
+            .tech-stack-header {
+                padding: 0.6rem 0;
+            }
+            
+            .tech-badge-small {
+                padding: 0.4rem;
+                width: 32px;
+                height: 32px;
+                max-width: 36px;
+                margin: 0 0.15rem;
+            }
+            
+            .tech-badge-small i {
+                font-size: 0.9rem;
+            }
+            
             .title {
                 font-size: 0.9rem;
             }
@@ -720,9 +832,32 @@
                 font-size: 1rem;
             }
             
-            .tech-stack-compact {
+            .skills-horizontal {
                 grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .skill-item {
+                padding: 1.2rem 1rem;
+                min-height: 100px;
+            }
+            
+            .skill-item strong {
+                font-size: 0.95rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .skill-desc {
+                font-size: 0.8rem;
+            }
+            
+            .tech-stack-horizontal {
                 gap: 0.5rem;
+            }
+            
+            .tech-stack-horizontal .tech-badge {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.75rem;
             }
             
             .tech-badge {
@@ -750,90 +885,73 @@
                 <p class="title">Founder • Technical Leader</p>
                 <div class="contact-info">
                     <div class="contact-item"><i class="fas fa-envelope"></i> georgereilly5@gmail.com</div>
-                    <div class="contact-item"><i class="fas fa-briefcase"></i> Founder at ZAPT</div>
-                    <div class="contact-item"><i class="fas fa-rocket"></i> Building Kaizen</div>
+                    <div class="contact-item"><i class="fas fa-phone"></i>  +44 7301 759735</div>
+                    <div class="contact-item"><i class="fas fa-map-marker-alt"></i> London, UK</div>
+                </div>
+                
+                <div class="tech-stack-header">
+                    <span class="tech-badge-small" data-tooltip="Next.js">N</span>
+                    <span class="tech-badge-small" data-tooltip="React"><i class="devicon-react-original"></i></span>
+                    <span class="tech-badge-small" data-tooltip="TypeScript"><i class="devicon-typescript-plain"></i></span>
+                    <span class="tech-badge-small" data-tooltip="Node.js"><i class="devicon-nodejs-plain"></i></span>
+                    <span class="tech-badge-small" data-tooltip="Python"><i class="devicon-python-plain"></i></span>
+                    <span class="tech-badge-small" data-tooltip="PostgreSQL"><i class="devicon-postgresql-plain"></i></span>
+                    <span class="tech-badge-small" data-tooltip="Supabase"><i class="devicon-supabase-plain"></i></span>
+                    <span class="tech-badge-small" data-tooltip="Stripe"><i class="fab fa-stripe"></i></span>
+                    <span class="tech-badge-small" data-tooltip="IoT"><i class="fas fa-microchip"></i></span>
                 </div>
             </div>
 
-            <div class="grid-layout">
-                <div class="sidebar">
-                    <div class="section">
-                        <h2 class="section-title">Skills</h2>
-                        <div class="competencies">
-                            <div class="competency-item">
-                                <strong>Problem Solving</strong><br>
-                                Finding solutions when others give up
-                            </div>
-                            <div class="competency-item">
-                                <strong>Business Automation</strong><br>
-                                Software solutions that eliminate manual processes
-                            </div>
-                            <div class="competency-item">
-                                <strong>IoT & Device Management</strong><br>
-                                Remote monitoring and control systems
-                            </div>
-                            <div class="competency-item">
-                                <strong>Financial Reporting</strong><br>
-                                Automated calculations and report generation
-                            </div>
-                        </div>
-                    </div>
+            <div class="section">
+                <h2 class="section-title">Personal Profile</h2>
+                <div class="profile-content">
+                    <p>Self-taught problem solver with a passion for technology and innovation. I enjoy exploring how systems work behind the scenes, from building automations to improving workflows. Naturally curious and tech-forward, I love learning new tools that make processes more efficient.</p>
+                    <p>I specialise in creating comprehensive systems and testing software solutions that solve real-world problems. My approach combines analytical thinking with hands-on experimentation to deliver robust, scalable solutions.</p>
+                </div>
+            </div>
 
-                    <div class="section">
-                        <h2 class="section-title">Education</h2>
-                        <div class="education-item">
-                            <div class="education-title">YouTube University</div>
-                            <div class="education-source">Self-Directed Learning</div>
-                            <div class="education-description">
-                                All the answers are out there if you can be bothered to look
-                            </div>
-                        </div>
-                        <div class="education-item">
-                            <div class="education-title">Trying</div>
-                            <div class="education-source">Practical Experience</div>
-                            <div class="education-description">
-                                Sometimes it works, sometimes it doesn't
-                            </div>
-                        </div>
+            <div class="section">
+                <h2 class="section-title">Core Competencies</h2>
+                <div class="skills-horizontal">
+                    <div class="skill-item">
+                        <strong>Systems Architecture</strong>
+                        <span class="skill-desc">Analyse processes and design efficient, scalable workflows that eliminate bottlenecks</span>
                     </div>
-
-                    <div class="section">
-                        <h2 class="section-title">Technical Stack</h2>
-                        <div class="tech-stack-compact">
-                            <span class="tech-badge"><i class="devicon-react-original"></i> React</span>
-                            <span class="tech-badge"><i class="devicon-typescript-plain"></i> TypeScript</span>
-                            <span class="tech-badge"><i class="devicon-nodejs-plain"></i> Node.js</span>
-                            <span class="tech-badge"><i class="devicon-python-plain"></i> Python</span>
-                            <span class="tech-badge"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
-                            <span class="tech-badge"><i class="devicon-supabase-plain"></i> Supabase</span>
-                            <span class="tech-badge"><i class="devicon-redis-plain"></i> Redis</span>
-                            <span class="tech-badge"><i class="fas fa-microchip"></i> IoT</span>
-                            <span class="tech-badge"><i class="devicon-vercel-plain"></i> Vercel</span>
-                        </div>
+                    <div class="skill-item">
+                        <strong>Data Analysis</strong>
+                        <span class="skill-desc">Compile complex data to identify optimisation opportunities and actionable insights</span>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Automation Design</strong>
+                        <span class="skill-desc">Transform manual processes into intelligent systems that work autonomously</span>
                     </div>
                 </div>
+            </div>
 
-                <div class="main-content">
-                    <div class="section">
-                        <h2 class="section-title">Work Experience</h2>
+
+            <div class="section">
+                <h2 class="section-title">Work Experience</h2>
                         
                         <div class="company">
                             <div class="company-header">
                                 <span class="company-name">ZAPT</span>
-                                <span class="role">Founder & CEO</span>
+                                <span class="role">Founder</span>
                             </div>
-                            <div class="duration">September 2024 - Present</div>
+                            <div class="duration">September 2024 - Current</div>
                             <div class="achievements">
-                                <div class="achievement">Built complete powerbank rental business from scratch - branding, operations, and all technical systems</div>
-                                <div class="achievement">Created automated monitoring system that tracks device status and capacity in real time, eliminating manual checks</div>
-                                <div class="achievement">Developed software that automatically generates financial reports and calculates commissions, saving hours of manual work</div>
-                                <div class="achievement">Implemented automated replenishment system that alerts when powerbanks need to be restocked, reducing downtime</div>
+                                <div class="achievement">Founded ZAPT after identifying a powerbank rental market opportunity in the UK during a business trip to China. Established partnerships with Chinese manufacturers and launched the complete business from concept to market. Built a comprehensive Next.js 14 full-stack dashboard with real-time analytics, venue management, and CRM capabilities to support operations.</div>
+                                <div class="achievement">Developed an automated lead generation system using Google Places API to identify potential venue partners across the UK, processing thousands of locations to generate qualified leads. Implemented Stripe POS terminal integration with real-time webhooks for transaction processing and financial analytics. Built a role-based access control system with three-tier permissions using secure Supabase authentication.</div>
+                                <div class="achievement">Created an advanced inventory management system for powerbank tracking, machine assignment, and real-time stock monitoring. Established venue partnerships through direct outreach and email campaigns, managing the complete business lifecycle from product development to customer acquisition and service delivery.</div>
                             </div>
                             <div class="tech-stack">
-                                <span class="tech-badge"><i class="devicon-nodejs-plain"></i> Node.js</span>
-                                <span class="tech-badge"><i class="devicon-python-plain"></i> Python</span>
+                                <span class="tech-badge">Next.js 14</span>
+                                <span class="tech-badge"><i class="devicon-react-original"></i> React</span>
+                                <span class="tech-badge"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                                <span class="tech-badge"><i class="devicon-supabase-plain"></i> Supabase</span>
                                 <span class="tech-badge"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
-                                <span class="tech-badge"><i class="fas fa-microchip"></i> IoT Systems</span>
+                                <span class="tech-badge"><i class="fab fa-stripe"></i> Stripe API</span>
+                                <span class="tech-badge"><i class="fas fa-chart-line"></i> Chart.js</span>
+                                <span class="tech-badge"><i class="fas fa-database"></i> Web Scraping</span>
                             </div>
                         </div>
 
@@ -842,18 +960,25 @@
                                 <span class="company-name">Kaizen</span>
                                 <span class="role">Solo Developer</span>
                             </div>
-                            <div class="duration">April 2025 - Present</div>
+                            <div class="duration">April 2024 - Current</div>
                             <div class="achievements">
-                                <div class="achievement">Building AI-powered productivity app that provides personalized coaching to help users build better habits</div>
-                                <div class="achievement">Created gamification system that motivates users through achievements and progress tracking</div>
-                                <div class="achievement">Developed smart analytics that identify patterns and provide actionable insights for productivity improvement</div>
-                                <div class="achievement">Built cross-platform mobile app that syncs data across devices for seamless user experience</div>
+                                <div class="achievement">Developed Kaizen, a comprehensive self-development mobile app combining habit tracking, fitness monitoring, project management, and AI-powered coaching in a unified platform. Built with React Native, TypeScript, and Supabase, featuring 7 Edge Functions for serverless AI processing including GPT-4o coaching, computer vision food analysis, and audio transcription.</div>
+                                <div class="achievement">Implemented advanced features including real-time GPS tracking, OpenFoodFacts API integration, Google Calendar OAuth, voice processing with Whisper API, and 50+ achievement types with gamification. Created a complex database architecture with Row Level Security, real-time sync via TanStack Query, and WebSocket connections for seamless data synchronisation.</div>
+                                <div class="achievement">Designed a multi-coach AI system with 7 specialised coaches providing personalised insights across fitness, productivity, health, and wellness domains. Delivered full-stack mobile development with offline-first architecture, background processing, computer vision, audio processing, and comprehensive state management for optimal user experience.</div>
                             </div>
                             <div class="tech-stack">
-                                <span class="tech-badge"><i class="devicon-react-original"></i> React</span>
+                                <span class="tech-badge"><i class="devicon-react-original"></i> React Native</span>
                                 <span class="tech-badge"><i class="devicon-typescript-plain"></i> TypeScript</span>
                                 <span class="tech-badge"><i class="devicon-supabase-plain"></i> Supabase</span>
-                                <span class="tech-badge"><i class="fas fa-mobile-alt"></i> Mobile Development</span>
+                                <span class="tech-badge"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+                                <span class="tech-badge"><i class="fas fa-brain"></i> OpenAI GPT-4o</span>
+                                <span class="tech-badge"><i class="fas fa-mobile-alt"></i> Expo SDK</span>
+                                <span class="tech-badge"><i class="fas fa-map-marker-alt"></i> GPS Tracking</span>
+                                <span class="tech-badge"><i class="fas fa-camera"></i> Computer Vision</span>
+                                <span class="tech-badge"><i class="fas fa-microphone"></i> Audio Processing</span>
+                                <span class="tech-badge"><i class="fas fa-calendar"></i> Google Calendar</span>
+                                <span class="tech-badge"><i class="fas fa-database"></i> Real-time Sync</span>
+                                <span class="tech-badge"><i class="fas fa-server"></i> Edge Functions</span>
                             </div>
                         </div>
 
@@ -862,15 +987,55 @@
                                 <span class="company-name">IceJewlz</span>
                                 <span class="role">Head of Marketing</span>
                             </div>
-                            <div class="duration">Previous Role</div>
+                            <div class="duration">December 2020 - July 2024</div>
                             <div class="achievements">
-                                <div class="achievement">Led comprehensive content strategy across all digital channels</div>
-                                <div class="achievement">Managed brand representation and social media presence</div>
+                                <div class="achievement">Joined IceJewlz initially to create content showcasing existing jewellery stock, but quickly expanded responsibilities to manage the entire digital presence. Oversaw comprehensive website development, social media strategy, and online advertising campaigns that significantly increased brand visibility and customer engagement.</div>
+                                <div class="achievement">Led all creative content production including professional photography and videography to showcase jewellery collections. Developed a comprehensive content strategy focused on visual storytelling and digital design that strengthened the brand's online identity across all digital channels.</div>
+                                <div class="achievement">Played a key role in transforming the brand's digital presence through strategic content creation and brand representation. Managed the complete digital marketing ecosystem, from content production to social media management, resulting in improved customer engagement and brand recognition.</div>
                             </div>
                             <div class="tech-stack">
                                 <span class="tech-badge"><i class="devicon-premierepro-plain"></i> Premiere Pro</span>
                                 <span class="tech-badge"><i class="devicon-aftereffects-plain"></i> After Effects</span>
                                 <span class="tech-badge"><i class="devicon-photoshop-plain"></i> Photoshop</span>
+                                <span class="tech-badge"><i class="fas fa-camera"></i> Photography</span>
+                            </div>
+                        </div>
+
+                        <div class="company">
+                            <div class="company-header">
+                                <span class="company-name">1Life Leisure</span>
+                                <span class="role">Duty Manager</span>
+                            </div>
+                            <div class="duration">September 2019 - December 2020</div>
+                            <div class="achievements">
+                                <div class="achievement">Oversaw day-to-day operations at Downham Health & Leisure Centre with responsibility for staff management and financial tracking. Managed a team of over 15 staff including lifeguards and gym personnel, ensuring schedules ran smoothly and the facility was well maintained.</div>
+                                <div class="achievement">Handled cash flow reconciliation and maintained high standards of customer service and safety compliance. Developed strong leadership and operational management skills in a fast-paced leisure environment, managing multiple operational priorities simultaneously.</div>
+                                <div class="achievement">Led the facility through daily operations while maintaining strict safety protocols and customer service standards. Built expertise in team management, financial oversight, and operational efficiency in a demanding leisure industry environment.</div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-badge"><i class="fas fa-users"></i> Team Management</span>
+                                <span class="tech-badge"><i class="fas fa-chart-bar"></i> Financial Tracking</span>
+                                <span class="tech-badge"><i class="fas fa-shield-alt"></i> Safety Compliance</span>
+                                <span class="tech-badge"><i class="fas fa-clock"></i> Operations</span>
+                            </div>
+                        </div>
+
+                        <div class="company">
+                            <div class="company-header">
+                                <span class="company-name">Potensis</span>
+                                <span class="role">Recruitment Consultant</span>
+                            </div>
+                            <div class="duration">April 2019 - August 2019</div>
+                            <div class="achievements">
+                                <div class="achievement">Worked as a headhunter within the recruitment team, using the company's CRM system to identify and contact potential candidates. Managed candidate contracts, maintained accurate records, and sourced new talent to expand the company's recruitment database.</div>
+                                <div class="achievement">Developed strong communication and organisational skills while consistently meeting daily performance targets. Built expertise in candidate sourcing, relationship management, and database administration within a fast-paced recruitment environment.</div>
+                                <div class="achievement">Successfully managed the complete candidate lifecycle from initial contact through to contract management. Built a strong foundation in professional relationship management and database administration that supported the company's recruitment objectives.</div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-badge"><i class="fas fa-search"></i> Candidate Sourcing</span>
+                                <span class="tech-badge"><i class="fas fa-database"></i> CRM Systems</span>
+                                <span class="tech-badge"><i class="fas fa-handshake"></i> Relationship Management</span>
+                                <span class="tech-badge"><i class="fas fa-target"></i> Performance Targets</span>
                             </div>
                         </div>
                     </div>
