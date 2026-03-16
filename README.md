@@ -1,119 +1,44 @@
-
 <div align="center">
 
-# Welcome
+# George Reilly
+
 ![Gif](https://media1.tenor.com/m/1y47NUVHSc4AAAAd/batman-arkham.gif)
-### Building my way up these streets 1 prompt at a time
 
-![Profile Views](https://komarev.com/ghpvc/?username=userthirty7&color=blueviolet&style=flat-square)
-
-</div>
-
-
-
-## 🎯 Currently Building 
-
-<div align="center">
-
-<img width="100" height="100" alt="kaizen-transparent" src="https://github.com/user-attachments/assets/aca8b0c7-bf57-4689-94e4-987c7c9c413d" />
-
-### **KAIZEN** - The App for Continuous Progression
-*All in one platform connecting your productivity with AI*
-
-<table style="border: none; border-collapse: collapse;">
-<tr>
-<td align="center" style="border: none;">
-  <img width="166" height="295" alt="TODAYSCREEN"
-       src="https://github.com/user-attachments/assets/fcbb33e4-3e32-486a-a842-06e23f593874" />
-</td>
-<td align="center" style="border: none;">
-  <img width="166" height="295" alt="HABITS"
-       src="https://github.com/user-attachments/assets/9a2c9bb2-325e-4020-9f70-501f9d777039" />
-</td>
-</tr>
-</table>
-
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=000)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=fff)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=fff)
-![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=fff)
-
-</div>
-
-> 🧠 **AI-Powered** habit tracking with intelligent coaching to hold you accountable  
-> 🎮 **Gamified** XP system to earn achievements and level up                      
-> 🏃 **Advanced Tracking** features like GPS distance, calorie counter with image
-
----
-
-## 🚀 What I've Built
-
-<div align="center">
-
-### **ZAPT Powerbank Management Suite**
-*Intelligent real-time IoT monitoring*
-
-</div>
-
-<table>
-<tr>
-<td width="50%">
-
-### 🔥 **Device Status Monitor**
-- **57+ devices** monitored in real-time
-- **Instant alerts** when devices go offline
-- **Dashboard monitor** with live status updates
-- **99.9% uptime** across multiple cloud platforms
-
-</td>
-<td width="50%">
-
-### 💰 **Financial Report Generator**
-- **Custom business logic** for complex commission calculations
-- **Professional PDF reports** with ZAPT branding
-- **Automated quarterly** reporting for partnering venues
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
+Normalising Operations to Maximise System Intelligence
 
 </div>
 
 ---
 
-## 🛠️ Tech Arsenal
+### Right Now
 
-<div align="center">
+Building the operational backbone behind **ZAPT**, a powerbank rental network rolling out across UK venues.
 
-### **Frontend**
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=000)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=fff)
-![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=fff)
+One platform runs the entire business. Hardware talks to it, venues get managed through it, money flows through it, decisions come out of it. Built it solo with AI doing the heavy lifting where a team would normally sit.
 
-### **Backend**
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=fff)
+Here's what it actually does:
 
-### **Cloud & DevOps**
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=fff)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+- Wraps the hardware manufacturer's API with a full integration layer. Bidirectional sync, webhooks, telemetry, remote config pushes to stations in the field
+- Detects peak rental hours per venue and auto-configures dynamic pricing to match demand
+- Predicts when stations need restocking using venue-level rental and depletion data
+- Manages what's on every station screen remotely. Different media, different positions, scheduled by time of day
+- Transcribes and analyses sales calls with AI so I'm not manually reviewing every conversation
+- Handles the full financial loop. Stripe payments in, commission splits calculated, venue payouts out
 
-</div>
+---
 
+### Other Things
 
+**[Kaizen](https://www.kaizen-app.co.uk)** - iOS app for continuous self-improvement. Habit tracking, GPS workouts, AI-powered calorie tracking from photos, voice journaling with AI summaries, project boards with team collaboration. One app instead of five. React Native + Expo + Supabase.
 
-<div align="center">
+---
 
-*"Doing my part for Gotham"* 
+### Thesis
 
-</div>
+Normalise operations, structure the data, build clean systems. The businesses that can fully leverage AI and whatever comes next are the ones with their foundations already in order. I build with that in mind.
+
+---
+
+### Stack
+
+Next.js, React, React Native, TypeScript, Node.js, PostgreSQL, Supabase, Vercel, Stripe, Claude, OpenAI
